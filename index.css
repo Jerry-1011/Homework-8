@@ -1,0 +1,56 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h1 {
+    font-size: 14px;
+  }
+  
+  .title1 {
+    color: rgb(29, 26, 228);
+    font-weight: 100;
+    line-height: 25px;
+    opacity: 0.9;
+  }
+  
+  .container {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border: 2px crimson solid;
+    border-radius: 5%;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition-duration: 4s;
+    transform: rotate3d(1, 1, 1, 60deg);
+  }
+  
+  .container:hover {
+    background-color: cornflowerblue;
+    color: aliceblue;
+    cursor: crosshair;
+    height: 150px;
+    width: 150px;
+  }
+  
+  .container:hover .title1 {
+    color: aliceblue;
+  }
+  
+  .wrapper {
+    height: 600px;
+    width: 600px;
+    background-color: antiquewhite;
+    border: 3px cornflowerblue solid;
+    border-radius: 10%;
+  }
+  
+  /* .wrapper .title2 {
+    color: green;
+  }
+  
+  div .title2 {
+    color: purple;
+  } */
+  
