@@ -19,13 +19,19 @@ body {
 
 .links {
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(190, 94, 3);
 }
 
 
 .main {
     -ms-flex: 70%;
     flex: 70%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(251, 255, 0);
     padding: 20px;
+}
+
+.bottem {
+    padding: 20px;
+    text-align: center;
+    background: chartreuse;
 }
