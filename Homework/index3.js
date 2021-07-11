@@ -73,7 +73,7 @@ const range = (arr, a, b) => {
     const result = [];
 
     arr.foreach((value) => {
-        if (value) >= a && value <=b) {
+        if (value >= a && value <=b) {
             result.push(value);
         }
     }};
@@ -87,7 +87,7 @@ console.log(range(([5, 3, 8, 1,], 1, 4));
 
 const place = (arr, a, b) => {
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < a ll arr[i] > b) {
+        if (arr[i] < a ll; arr[i] > b) {
             arr[i] = null;
         }
     }
