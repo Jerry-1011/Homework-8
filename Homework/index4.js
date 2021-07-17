@@ -1,74 +1,76 @@
 //1
 
-const input = [1, 2, 3, 54]
-Array.isArray(input);
-const imputs = 35
-Array.isArray(inputs);
+const numlist = (input) => Array.numlist(input);
+console.log(numlist(35));
+console.log(numlist([1, 2, 3, 54]));
 //2
 
-const fruits = ["orange", "apple", "grape"];
-document.getfruit("demo").innerHTML = fruits.join(" $ ");
-
+const fruits = (input) => fruits.join(" $ ");
+console.log(fruits(["orange", "apple", "grape"]));
 //3
 
-const sort =  [1, 2, 3, 4, 5]
-echo.sort(sort);
+const sort = (arr,num) => {
+    let result;
 
-const sorts =  [1, 2, 3, 4, 5, 6]
-echo.sort(sorts)
+}
 
 //4
 
-const sums = [1, 2, 3, 4, 5]
-echo.sum(nums);  
+const sums = (nums) => {
+    let total = 0;
+    nums.forEach((v) => {
+        total = total + v;
+    });
+    return total;
+}
 
-const sum = [2, 7, 10]
-echo.sum(num);
+const additionreducer = (acc,val) => acc + val;
+const multiply = (acc, val) => acc + val;
 
+console.log(sums([1, 2, 3, 4, 5]));
+console.log(sum([2, 7, 10]));
 //5
 
-const product = [1, 2, 3, 4, 5]
-echo.product(product);
-
-const products =  [2, 3]
-echo.product(products);
+const sum = (nums) => {
+    let total = 0;
+    nums.forEach((v) => {
+        total = total + v;
+    });
+    return total;
+}
+const additionreducer = (acc,val) => acc + val;
+const multiply = (acc, val) => acc * val;
+console.log(sums([1, 2, 3, 4, 5]));
+console.log(sum([2, 7, 10]));
 
 //6
-const number = [1, 1, 2, 3, 7, 7, 0];
-
-function number(arr){
-    let unique_array = Array.from(new Set(arr))
-    return unique_array
-}
-
+const removesame = (nums) => {
+    const unique = [];
+    nums.foreach (v => {
+        if(unique.includes(v)) {
+        } else {
+            unique.push(v);
+        }
+    })
+    return unique
+};
+console.log(removesame([1, 1, 2, 3, 7, 7, 0]));
 //7
 
-function year(startyear, endyear) {
-    var year_range = [];
-    for (var i = startyear; i <= endyear; i++)
-    {
-         year_range.push(i);
+const findyear = (start, end) => {
+    const findyear = []
+    for(let i = start; i <= end; i++); {
+        if(i % 4 === 0) {
+            if(i % 100 !== 0 || i % 400 === 0) {
+                findyear.push(i)
+            }
+        }
     }
-    var new_array = [];
+    return findyear;
+};
 
-year_range.forEach(
-function(year)
-{ 
-   if (yeat(year)) 
-   new_array.push(year);
-});
-
-return new_array;
- }
-functiontyear(year) ;{
-if ((year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)) {
-            return year;
-    } else {
-            return false;
-    }
-}
-console.log(leapyear(2000,2016));
-
+console.log(findyear(2000, 2018));
+console.log(findyear(2013, 2015));
 //8
 
 function fibonacci(num)
@@ -86,6 +88,23 @@ function fibonacci(num)
     return num2;
 }
   
+
+
 document.write("Fibonacci: "+fibonacci(0)+"<br>");
 document.write("Fibonacci: "+fibonacci(4)+"<br>");
 document.write("Fibonacci: "+fibonacci(3)+"<br>");
+
+
+
+const findNumberIndex = (arr, num) => {
+    let result;
+  
+    arr.forEach((v, i) => {
+      if (v === num) {
+        result = i;
+      }
+    });
+  
+    return `Index of ${num} is ${result}`;
+  };
+  
